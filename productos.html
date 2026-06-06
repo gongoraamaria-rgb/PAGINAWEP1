@@ -1,0 +1,138 @@
+3<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Productos - Tequila Prime</title>
+	<meta name="description" content="Conoce nuestra línea exclusiva de tequilas artesanales Tequila Prime.">
+	<link rel="stylesheet" href="estilo.css">
+	<style>
+		.productos-grid {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			justify-content: center;
+			margin-top: 25px;
+		}
+
+		.tarjeta-producto {
+			background-color: #e3f2fd;
+			border-radius: 18px;
+			padding: 16px;
+			width: 200px;
+			text-align: center;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+			transition: transform 0.25s, box-shadow 0.25s;
+		}
+
+		.tarjeta-producto:hover {
+			transform: translateY(-6px);
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+		}
+
+		.tarjeta-producto img {
+			width: 100%;
+			height: 200px;
+			object-fit: contain;
+			border-radius: 12px;
+			margin: 0 auto 12px auto;
+			display: block;
+			mix-blend-mode: multiply;
+		}
+
+		.tarjeta-producto h3 {
+			color: #0a476b;
+			margin-bottom: 6px;
+			font-size: 15px;
+		}
+
+		.tarjeta-producto p {
+			color: #555;
+			font-size: 12px;
+			line-height: 1.5;
+		}
+
+		.etiqueta-edicion {
+			display: inline-block;
+			background-color: #0a476b;
+			color: white;
+			font-size: 10px;
+			padding: 3px 10px;
+			border-radius: 20px;
+			margin-bottom: 8px;
+		}
+	</style>
+</head>
+
+<body id="top">
+
+	<header class="titulo">
+		<h1>Tequila Prime</h1>
+		<p>Prime en nombre, superior por naturaleza</p>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="servicios.html">Servicios</a></li>
+			<li><a href="productos.html" class="activo">Productos</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="Equipo.html" >Equipo</a></li>
+		</ul>
+	</nav>
+
+	<main class="contenido">
+
+		<section id="productos" class="articulo">
+			<div>
+				<h2>Nuestra Línea de Productos</h2>
+				<p>Descubre nuestra exclusiva colección de tequilas artesanales, elaborados con agave azul.</p>
+
+				<div class="productos-grid">
+
+					<!-- PRODUCTO 1: REPOSADO -->
+					<div class="tarjeta-producto">
+						<img src="REPOSADO.png" alt="Tequila Prime Reposado">
+						<h2>$3000</h2>
+						<h3>Prime Reposado</h3>
+						<p>Añejado 8 meses en barricas de roble, con toques de vainilla y caramelo.</p>
+					</div>
+
+					<!-- PRODUCTO 2: BLANCO -->
+					<div class="tarjeta-producto">
+						<img src="BLANCO.png" alt="Tequila Prime Blanco">
+						<h2>$5600</h2>
+						<h3>Prime Añejo</h3>
+						<p>Envejecido más de 2 años, sabor profundo con notas de chocolate, madera y especias.</p>
+					</div>
+
+					<!-- PRODUCTO 3: BLACK EDITION -->
+					<div class="tarjeta-producto">
+						<span class="etiqueta-edicion">Edición Limitada</span>
+						<img src="BLACK.png" alt="Tequila Prime Black Edition">
+						<h2>$14000</h2>
+						<h3>Prime Black Edition</h3>
+						<p>Botella negra mate, tequila extra añejo de lujo, pensado para coleccionistas.</p>
+					</div>
+					
+
+				</div>
+
+				<br>
+				<a href="index.html" class="boton">Volver al Inicio</a>
+			</div>
+		</section>
+
+
+
+	</main>
+
+	<footer class="piedepagina">
+		<p>2026 Tequila Prime - Todos los derechos reservados</p>
+	</footer>
+
+</body>
+
+</html>
